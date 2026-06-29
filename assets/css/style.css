@@ -42,25 +42,30 @@ h2 {
 
 /*BUTTONS*/
 
-.custom-button-filled{
-    border:2px solid var(--highlight-color);
+.custom-button-filled {
+    border: 2px solid var(--highlight-color);
     background-color: var(--highlight-color);
-    color:white;
+    color: white;
 }
-.custom-button-filled:hover{
-    border:2px solid var(--secondary-color);
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
-    color:white;
+    color: white;
 }
-.custom-button-outline{
-    border:2px solid var(--highlight-color);
-    
+
+.custom-button-outline {
+    border: 2px solid var(--highlight-color);
+    padding: 7px 25px;
+
 }
-.custom-button-outline:hover{
+
+.custom-button-outline:hover {
     background-color: var(--highlight-color);
-    color:white;
-    
+    color: white;
+
 }
+
 /* NAVBAR */
 #navbar {
     background-color: var(--primary-color);
@@ -91,14 +96,16 @@ h2 {
 
 /* NEW GAMES*/
 #favourite-games .card,
-#new-games .card{
-    border:none;
+#new-games .card {
+    border: none;
 }
+
 #favourite-games .card-footer,
-#new-games .card-footer{
-    background:transparent;
-    border:none;
+#new-games .card-footer {
+    background: transparent;
+    border: none;
 }
+
 /* Footer / contact */
 
 #contact {
@@ -130,9 +137,25 @@ h2 {
 #contact .social-links .social-icon-link:hover {
     color: var(--secondary-color);
 }
-#contact .table-dark *{
-    background:transparent;
+
+#contact .table-dark * {
+    background: transparent;
 }
+
+
+/* PRICING */
+#pricing #student-discount {
+    background-color: var(--highlight-color);
+    color: white;
+    text-align: center;
+
+}
+
+#pricing .table-light * {
+    background: transparent;
+    padding: 15px 0;
+}
+
 /* .container,
 .row {
     border: 2px solid black;
@@ -141,10 +164,22 @@ h2 {
     border: 2px solid white;
     background-color: lightgray;
 } */
+@media (min-width:320px) {
+
+    #pricing .table-light,
+    #student-discount {
+        font-size: .8rem;
+    }
+}
 
 @media (min-width:768px) {
     #services .card-body {
         min-height: 191px;
+    }
+
+    #pricing .table-light,
+    #student-discount {
+        font-size: 1rem;
     }
 }
 
@@ -153,11 +188,13 @@ h2 {
         min-height: auto;
     }
 }
+
 @media (min-width:1200px) {
     #services .card-body {
         min-height: 220px;
     }
 }
+
 @media (min-width:1400px) {
     #services .card-body {
         min-height: 195px;
