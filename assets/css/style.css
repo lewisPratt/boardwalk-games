@@ -78,6 +78,40 @@ h2 {
     background:transparent;
     border:none;
 }
+/* Footer / contact */
+
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 3rem;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact .sub-heading-color {
+    color: var(--highlight-color-light);
+}
+
+#contact .contact-icon {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#contact .social-links .social-icon-link {
+    color: var(--highlight-color-light);
+    font-size: 1.9rem;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links .social-icon-link:hover {
+    color: var(--secondary-color);
+}
+#contact .table-dark *{
+    background:transparent;
+}
 /* .container,
 .row {
     border: 2px solid black;
