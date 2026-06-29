@@ -40,6 +40,27 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/*BUTTONS*/
+
+.custom-button-filled{
+    border:2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color:white;
+}
+.custom-button-filled:hover{
+    border:2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color:white;
+}
+.custom-button-outline{
+    border:2px solid var(--highlight-color);
+    
+}
+.custom-button-outline:hover{
+    background-color: var(--highlight-color);
+    color:white;
+    
+}
 /* NAVBAR */
 #navbar {
     background-color: var(--primary-color);
